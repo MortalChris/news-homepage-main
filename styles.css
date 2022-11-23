@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+};
+
+body{
+
+};
+
+#main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "picture picture aside"
+    "article article aside"
+    "bottom bottom bottom"
+    "footer footer footer";
+};
+
+/*Header and Navbar*/
+#Heading{
+    grid-area: header;
+};
+
+/****Picture****/
+#pic-container{
+    grid-area: picture;
+};
+
+/******Right Side Content********/
+#aside{
+    grid-area: aside;
+};
+
+/*********Bottom Content***********/
+#bottom-container{
+    grid-area: bottom;
+};
+
+/*********Footer*****************/
+#attribution{
+    grid-area: footer;
+};
