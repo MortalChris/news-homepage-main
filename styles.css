@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root{
+    --clr-heading: hsl(240, 100%, 5%);
+    --clr-secondary-heading: white;
+    --clr-aside-heading: hsl(35, 77%, 62%);
+    --clr-tertiary-heading: hsl(233, 8%, 79%);
+
+    --clr-button: hsl(5, 85%, 63%);
+    --clr-paragraph: hsl(236, 13%, 42%);
+    --clr-background: hsl(240, 100%, 5%);
+    
+}
+
+
+
 *{
     font-family: 'Inter', sans-serif;
     margin: 0rem;
     padding: 0rem;
+    background: hsl(36, 100%, 99%);
 }
 
 body{
-    margin: 4rem 9rem;
+    margin: 4rem 15rem;
 }
 
 #main-container{
     display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5rem 20rem 15rem 15rem;
+    grid-template-rows: 5rem 15rem 12rem 12rem;
     gap: 1.5rem;
     grid-template-areas:
     "header header header"
@@ -38,29 +54,84 @@ body{
     object-fit: cover;
 }
 
-#hading{
+/************(Left)Article Content*************/
+#heading{
     grid-area: heading;
-    font-weight: 400;
+    font-weight: 800;
+    font-style: bold;       
+    font-size: 1.7rem;
+    line-height: 3.5rem;
 }
 #article{
     grid-area: article;
+    font-size: .4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding-right: .5rem;
+    color: var(--clr-paragraph);
+}
+button{
+    margin-top: 2rem;
+    font-size: .9rem;
+    letter-spacing: .3rem;
+    padding: 1rem 2rem;
+    color:var(--clr-secondary-heading);
+    background-color: var(--clr-button);
+    border: none;
 }
 
 /******Right Side Content********/
 #aside{
     grid-area: aside;
+    background: var(--clr-background);
+    border: none;
+    padding: 2rem 1rem;  
+}
+#aside h1{
+    color: var(--clr-aside-heading);
+    background: var(--clr-background);
+    font-size: 2.2rem;
 }
 
+#aside-content{
+    background: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#top-aside{/*The Very top h2 of the aside*/
+    margin-top: 0rem;
+}
+#aside h2{
+    color: var(--clr-secondary-heading);
+    background: var(--clr-background);
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+#aside p{
+    color: rgb(148, 148, 161);
+    background: var(--clr-background);
+    margin-top: .5rem;
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
 /*********Bottom Content***********/
 #bottom-content{
     grid-area: bottom;
     display: flex;
     justify-content: space-around;
-
+    padding-right: 1.6rem;
 }
-
-
-
+#bottom-content h1{
+    color: var(--clr-tertiary-heading);
+}
+#bottom-content h2{
+    color: var(--clr-heading);
+}
+#bottom-content p{
+    color: var(--clr-paragraph);
+    font-size: 1rem;
+}
 
 
 
