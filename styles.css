@@ -13,7 +13,6 @@
 }
 
 
-
 *{
     font-family: 'Inter', sans-serif;
     margin: 0rem;
@@ -22,7 +21,7 @@
 }
 
 body{
-    margin: 4rem 12rem;
+    margin: 4rem 22rem;
 }
 
 #main-container{
@@ -39,10 +38,20 @@ body{
 }
 
 /*Header and Navbar*/
-#header{
+#header-container{
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+#nav{
+    justify-content: space-between;
+}
+a{
+    padding-left: 2rem;
+    color: var(--clr-paragraph);
+    text-decoration: none;
+}
 
 /****Picture****/
 #pic-container{
@@ -56,14 +65,14 @@ body{
 
 
 /************(Left)Article Content*************/
-#heading{
+#heading-container{
     grid-area: heading;
     font-weight: 900;
     font-style: bold;       
     font-size: 1.7rem;
     line-height: 3.5rem;
 }
-#article{
+#article-container{
     grid-area: article;
     font-size: .34rem;
     font-weight: 700;
@@ -83,16 +92,16 @@ button{
 
 
 /******Right Side Content********/
-#aside{
+#aside-container{
     grid-area: aside;
     background: var(--clr-background);
     border: none;
-    padding: 2rem 1rem;  
 }
-#aside h1{
+#aside-container h1{
     color: var(--clr-aside-heading);
     background: var(--clr-background);
     font-size: 2.2rem;
+    padding: 2rem 2rem 0rem 2rem; 
 }
 
 #aside-content{
@@ -100,17 +109,16 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0rem 2rem 2rem 2rem;
 }
-#top-aside{/*The Very top h2 of the aside*/
-    margin-top: 0rem;
-}
-#aside h2{
+
+#aside-container h2{
     color: var(--clr-secondary-heading);
     background: var(--clr-background);
     font-size: 1.1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
-#aside p{
+#aside-container p{
     color: rgb(148, 148, 161);
     background: var(--clr-background);
     margin-top: .5rem;
