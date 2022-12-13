@@ -21,7 +21,7 @@
 }
 
 body{
-    margin: 0rem 35vh 0rem 35vh;
+    margin: auto;
 }
 
 #main-container{
@@ -195,7 +195,7 @@ hr{/*In between line break*/
     margin-top: 2rem;
 }
 *******/
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1023px) {
     body {
         margin: auto;
         margin-bottom: 2rem;
@@ -231,8 +231,6 @@ hr{/*In between line break*/
         display: block;
     }
 
-
-
     /**********Picture-area(changes image at different screen size)************/
     #small-img{
         display:block;
@@ -248,9 +246,10 @@ hr{/*In between line break*/
 
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
     body{
-        margin: 0vh 3vh 0vh 3vh;
+        margin: auto;
+        width: 90%;
     }
     #aside-container{
         height: 33rem;
@@ -259,7 +258,13 @@ hr{/*In between line break*/
 
 @media screen and (min-width: 1440px) {
     body{
-        margin: 0vh 20vh 0vh 20vh;
+        margin: auto;
+        width: 70%;
     }
 }
-
+@media screen and (min-width: 1470px) {
+    body{
+        margin: auto;
+        width: 60%;
+}
+}
