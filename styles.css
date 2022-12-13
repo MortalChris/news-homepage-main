@@ -55,6 +55,11 @@ a{
     text-decoration: none;
 }
 
+#lines{
+    display: none;
+}
+
+
 /****Picture****/
 #pic-container{
     grid-area: picture;
@@ -218,6 +223,17 @@ hr{/*In between line break*/
         "bottom2"
         "bottom3";
     }
+
+    a{
+        display: none;
+    }
+    #lines{
+        display: block;
+    }
+
+
+
+    /**********Picture-area(changes image at different screen size)************/
     #small-img{
         display:block;
         width: 100%;
