@@ -25,7 +25,7 @@ body{
 }
 
 #main-container{
-    display: flex;
+/*     display: flex; */
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
